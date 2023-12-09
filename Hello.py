@@ -20,7 +20,7 @@ LOGGER = get_logger(__name__)
 
 def run():
     st.set_page_config(
-        page_title="Hello",
+        page_title="Dashboard",
         page_icon="👋",
     )
 
@@ -30,19 +30,18 @@ def run():
 
     st.markdown(
         """
-        Streamlit is an open-source app framework built specifically for
-        Machine Learning and Data Science projects.
-        **👈 Select a demo from the sidebar** to see some examples
-        of what Streamlit can do!
+        Laundris Co-Pilot is self-guided AI-Based linen operations suite
+        for hospitality property or laundry facility.
+        **👈 Select a demo from the sidebar** to see our demos
+        of what Laundris can do!
         ### Want to learn more?
-        - Check out [streamlit.io](https://streamlit.io)
-        - Jump into our [documentation](https://docs.streamlit.io)
+        - Check out laundris.com
+        - Jump into our app laundris.app to signup
         - Ask a question in our [community
-          forums](https://discuss.streamlit.io)
-        ### See more complex demos
-        - Use a neural net to [analyze the Udacity Self-driving Car Image
-          Dataset](https://github.com/streamlit/demo-self-driving)
-        - Explore a [New York City rideshare dataset](https://github.com/streamlit/demo-uber-nyc-pickups)
+        ### See our app demos
+        - Use Laundris to [manage your hotel property
+          autonomously](https://laundris.com)
+        - Explore ways to [manage your laundry facility](https://laundris.com)
     """
     )
 

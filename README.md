@@ -1,7 +1,8 @@
-# Welcome to streamlit
+# Laundris Co-Pilot Analytics Dashboard
 
-This is the app you get when you run `streamlit hello`, extracted as its own app.
+Laundris is an AI-Based autonomous guided linen operations provider.
+This app is a means to show the value Laundris can offer to both individual properties or commercial laundry facilities.
 
-Edit [Hello.py](./Hello.py) to customize this app to your heart's desire. ❤️
+Goals:
+Management at either property or Facility needs to self-guide themselves on the day to day operation using Laundris
 
-Check it out on [Streamlit Community Cloud](https://st-hello-app.streamlit.app/)
