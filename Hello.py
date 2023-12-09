@@ -37,7 +37,7 @@ def run():
         ### Want to learn more?
         - Check out laundris.com
         - Jump into our app laundris.app to signup
-        - Ask a question in our [community
+        - Ask a question in our [Laundris community](https://laundris.com)
         ### See our app demos
         - Use Laundris to [manage your hotel property
           autonomously](https://laundris.com)
