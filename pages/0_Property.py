@@ -38,4 +38,3 @@ col2.metric("Reduced Linen Loss", "12% YTD", "3% MTD")
 col3.metric("Reduced Linen Cost", "24% YTD", "7% MTD")
 
 # Row B
-
