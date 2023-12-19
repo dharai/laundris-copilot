@@ -24,13 +24,13 @@ def run():
         page_icon="👋",
     )
 
-    st.write("# Welcome to Laundris Co-Pilot 👋")
+    st.write("# Welcome to Laundris AI Demo 👋")
 
     st.sidebar.success("Select a demo above.")
 
     st.markdown(
         """
-        Laundris Co-Pilot is self-guided AI-Based linen operations suite
+        Laundris AI is self-guided AI-Based linen operations suite
         for hospitality property or laundry facility.
         **👈 Select a demo from the sidebar** to see our demos
         of what Laundris can do!

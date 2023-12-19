@@ -1,4 +1,4 @@
-# Laundris Co-Pilot Analytics Dashboard
+# Laundris AI Analytics Dashboard
 
 Laundris is an AI-Based autonomous guided linen operations provider.
 This app is a means to show the value Laundris can offer to both individual properties or commercial laundry facilities.
