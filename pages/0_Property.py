@@ -31,10 +31,18 @@ st.sidebar.markdown('''
 
 
 # Row A
-st.markdown('### Laundris Value Add')
+st.markdown('# Laundris Value Add')
 col1, col2, col3 = st.columns(3)
 col1.metric("Labor Cost Saved", "$14K YTD", "3K MTD")
 col2.metric("Reduced Linen Loss", "12% YTD", "3% MTD")
 col3.metric("Reduced Linen Cost", "24% YTD", "7% MTD")
 
 # Row B
+st.markdown('# ')
+st.markdown('### Inventory optimization')
+st.markdown('# ')
+st.markdown('### Rag out predictions')
+st.markdown('# ')
+st.markdown('### Reorder predictions')
+st.markdown('# ')
+
