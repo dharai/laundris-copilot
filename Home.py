@@ -24,9 +24,9 @@ def run():
         page_icon="👋",
     )
 
-    st.write("# Welcome to Laundris AI Demo 👋")
+    st.write("# Welcome to Laundris AI Analytics")
 
-    st.sidebar.success("Select a demo above.")
+    st.sidebar.success("Select a dashboard above.")
 
     st.markdown(
         """
