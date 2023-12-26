@@ -56,7 +56,7 @@ st.markdown('### Reorder predictions')
 st.markdown('# ')
 
 demo, url = (
-            ST_DEMOS['line-simple']
+            ST_DEMOS['line']
         )
 
 def render_basic_area_chart():
