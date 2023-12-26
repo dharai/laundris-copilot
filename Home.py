@@ -1,16 +1,4 @@
-# Copyright (c) Streamlit Inc. (2018-2022) Snowflake Inc. (2022)
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
+# Laundris Analytics App
 
 import streamlit as st
 from streamlit.logger import get_logger
@@ -21,12 +9,23 @@ LOGGER = get_logger(__name__)
 def run():
     st.set_page_config(
         page_title="Dashboard",
-        page_icon="👋",
+        page_icon=":chart_with_upwards_trend:",
     )
 
     st.write("# Welcome to Laundris AI Analytics")
 
     st.sidebar.success("Select a dashboard above.")
+
+    with st.sidebar:
+        st.markdown("---")
+        st.markdown(
+            '<h6>Made in &nbsp<img src="https://streamlit.io/images/brand/streamlit-mark-color.png" alt="Streamlit logo" height="16">&nbsp by <a href="https://twitter.com/andfanilo">@andfanilo</a></h6>',
+            unsafe_allow_html=True,
+        )
+        st.markdown(
+            '<div style="margin-top: 0.75em;"><a href="https://www.buymeacoffee.com/andfanilo" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a></div>',
+            unsafe_allow_html=True,
+        )
 
     st.markdown(
         """
