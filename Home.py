@@ -14,15 +14,6 @@ def run():
 
     st.write("# Welcome to Laundris AI Analytics")
 
-    with st.sidebar:
-        st.markdown(
-            '<div style="margin-top: 0.75em;"><a href="https://laundris.app" target="_blank"><img src="laundris-logo.png" alt="Laundris Logo" height="41" width="174"></a></div>',
-            unsafe_allow_html=True,
-        )
-        st.markdown("---")
-        st.sidebar.success("Select a dashboard below.")
-
-
     st.markdown(
         """
         Laundris AI is self-guided AI-Based linen operations suite
@@ -43,3 +34,11 @@ def run():
 
 if __name__ == "__main__":
     run()
+    with st.sidebar:
+        st.markdown(
+            '<div style="margin-top: 0.75em;"><a href="https://laundris.app" target="_blank"><img src="laundris-logo.png" alt="Laundris Logo" height="41" width="174"></a></div>',
+            unsafe_allow_html=True,
+        )
+        st.markdown("---")
+        st.sidebar.success("Select a dashboard below.")
+
