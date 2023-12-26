@@ -23,9 +23,6 @@ from streamlit_echarts import st_echarts
 from streamlit_echarts import JsCode
 
 from demo_echarts import ST_DEMOS
-from demo_pyecharts import ST_PY_DEMOS
-
-#from streamlit.hello.utils import show_code
 
 st.set_page_config(layout='wide', initial_sidebar_state='expanded')
 
@@ -56,26 +53,21 @@ st.markdown('### Reorder predictions')
 st.markdown('# ')
 
 demo, url = (
-            ST_DEMOS['line']
+            ST_DEMOS['line-simple']
         )
 
-def render_basic_area_chart():
-    options = {
+def render_basic_line_chart():
+    option = {
         "xAxis": {
             "type": "category",
-            "boundaryGap": False,
             "data": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
         },
         "yAxis": {"type": "value"},
-        "series": [
-            {
-                "data": [820, 932, 901, 934, 1290, 1330, 1320],
-                "type": "line",
-                "areaStyle": {},
-            }
-        ],
+        "series": [{"data": [820, 932, 901, 934, 1290, 1330, 1320], "type": "line"}],
     }
-    st_echarts(options=options)
+    st_echarts(
+        options=option, height="400px",
+    )
 
 ST_LINE_DEMOS = {
     "Line: Basic Line Chart": (
@@ -83,6 +75,3 @@ ST_LINE_DEMOS = {
         "https://echarts.apache.org/examples/en/editor.html?c=line-simple",
     ),
 }
-
-demo()
-sourcelines, _ = inspect.getsourcelines(demo)
