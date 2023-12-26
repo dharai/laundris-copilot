@@ -77,5 +77,12 @@ def render_basic_area_chart():
     }
     st_echarts(options=options)
 
+ST_LINE_DEMOS = {
+    "Line: Basic Line Chart": (
+        render_basic_line_chart,
+        "https://echarts.apache.org/examples/en/editor.html?c=line-simple",
+    ),
+}
+
 demo()
 sourcelines, _ = inspect.getsourcelines(demo)

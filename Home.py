@@ -3,10 +3,12 @@
 import streamlit as st
 from streamlit.logger import get_logger
 
+from demo_echarts import ST_DEMOS
+
 LOGGER = get_logger(__name__)
 
 
-def run():
+def main():
     st.set_page_config(
         page_title="Dashboard",
         page_icon=":chart_with_upwards_trend:",
@@ -33,7 +35,7 @@ def run():
 
 
 if __name__ == "__main__":
-    run()
+    main()
     with st.sidebar:
         st.markdown(
             '<div style="margin-top: 0.75em;"><a href="https://laundris.app" target="_blank"><img src="../laundris-logo.png" alt="Laundris Logo" height="41" width="174"></a></div>',
