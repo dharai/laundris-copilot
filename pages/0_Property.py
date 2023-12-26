@@ -5,7 +5,6 @@ from typing import Any
 
 import numpy as np
 
-import streamlit as st
 #from streamlit.hello.utils import show_code
 import pandas as pd
 import plost
@@ -78,3 +77,5 @@ def render_basic_area_chart():
     }
     st_echarts(options=options)
 
+demo()
+sourcelines, _ = inspect.getsourcelines(demo)

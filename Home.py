@@ -36,7 +36,7 @@ if __name__ == "__main__":
     run()
     with st.sidebar:
         st.markdown(
-            '<div style="margin-top: 0.75em;"><a href="https://laundris.app" target="_blank"><img src="laundris-logo.png" alt="Laundris Logo" height="41" width="174"></a></div>',
+            '<div style="margin-top: 0.75em;"><a href="https://laundris.app" target="_blank"><img src="../laundris-logo.png" alt="Laundris Logo" height="41" width="174"></a></div>',
             unsafe_allow_html=True,
         )
         st.markdown("---")
