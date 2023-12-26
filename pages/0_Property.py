@@ -1,12 +1,7 @@
-# Laundris Property AI Demo
-
+# Laundris Property Analytics
 
 from typing import Any
-
 import numpy as np
-
-#from streamlit.hello.utils import show_code
-import pandas as pd
 import plost
 
 from urllib.error import URLError
@@ -22,7 +17,7 @@ import json
 from streamlit_echarts import st_echarts
 from streamlit_echarts import JsCode
 
-from demo_echarts import ST_DEMOS
+from property_charts import ST_DEMOS
 
 st.set_page_config(layout='wide', initial_sidebar_state='expanded')
 
@@ -31,10 +26,16 @@ with open('style.css') as f:
     
 st.sidebar.header('Property `Dashboard`')
 
-st.sidebar.markdown('''
----
-''')
-
+with st.sidebar:
+        st.header("Configuration")
+        selected_api = 'echarts'
+        page_options = 'line'
+        selected_page = 'Line: Basic Line Chart'
+        demo, url = (
+            ST_DEMOS[selected_page]
+            if selected_api == "echarts"
+            else ST_PY_DEMOS[selected_page]
+        )
 
 # Row A
 st.markdown('# Laundris Value Add')
@@ -46,32 +47,8 @@ col3.metric("Reduced Linen Cost", "24% YTD", "7% MTD")
 # Row B
 st.markdown('# ')
 st.markdown('### Inventory optimization')
-st.markdown('# ')
+demo()
 st.markdown('### Rag out predictions')
 st.markdown('# ')
 st.markdown('### Reorder predictions')
 st.markdown('# ')
-
-demo, url = (
-            ST_DEMOS['line-simple']
-        )
-
-def render_basic_line_chart():
-    option = {
-        "xAxis": {
-            "type": "category",
-            "data": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-        },
-        "yAxis": {"type": "value"},
-        "series": [{"data": [820, 932, 901, 934, 1290, 1330, 1320], "type": "line"}],
-    }
-    st_echarts(
-        options=option, height="400px",
-    )
-
-ST_LINE_DEMOS = {
-    "Line: Basic Line Chart": (
-        render_basic_line_chart,
-        "https://echarts.apache.org/examples/en/editor.html?c=line-simple",
-    ),
-}
